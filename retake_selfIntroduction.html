@@ -85,17 +85,18 @@
         #centencePart {    
             clear: both;
             padding: 20px 20px;
+            
             margin-left:auto;
             margin-right:auto;
             overflow: hidden;
             display: block;
         }
-        @media screen and (max-width: 479px) { 
+        @media (max-width: 767px) { 
             #centencePart {
-                    width: auto;
+                    width: 90%;
                     float: none;
             }
-        }   
+        }
 
         #topBlock {
             clear: both;
@@ -106,7 +107,35 @@
             margin-left:auto;
             margin-right:auto;
             overflow: hidden;
-            /* border: solid 5px #00BFFF; */
+            display: inline-block;
+        }
+        @media (max-width: 767px) { 
+            #topBlock {
+                width: 90%;
+                height: auto;
+            }
+        }
+        .imageJPG {
+            width: 100%;
+            max-width: 240px;
+            height: auto;
+            float: left;
+        }
+        @media (max-width: 767px) { 
+            .imageJPG {
+                width: 60%;
+                height: auto;
+            }
+        }
+        .introCentence {
+            width: 100%;
+            display: block;
+        }
+        @media (max-width: 767px) { 
+            .introCentence {
+                width: 70%;
+                height: auto;
+            }
         }
         .introName {
             color: #00BFFF;
@@ -115,11 +144,11 @@
             text-align: left;
             border-bottom: 5px dotted #00C;
         }
-        .imageJPG {
-            width: 100%;
-            max-width: 240px;
-            height: auto;
-            float: left;
+        @media (max-width: 767px) { 
+            .introName {
+                font-size: 70%;
+                width: 100%;
+            }
         }
         .motto {
             color: #00BFFF;
@@ -129,10 +158,13 @@
             font-weight: bold;
             box-sizing: border-box;
         }  
-        /* .mottoItem {
-            font-size: 30px;
-            margin: 0px 0px;
-        } */
+        @media (max-width: 767px) { 
+            .motto {
+                font-size: 70%;
+                height: auto;
+                float: left;
+            }
+        }
 
         #firstBlock {
             clear: both;
@@ -142,8 +174,14 @@
             margin-left:auto;
             margin-right:auto;
             overflow: hidden;
-            /* border: solid 5px #00BFFF; */
         } 
+        @media (max-width: 767px) { 
+            #firstBlock {
+                width: 70%;
+                padding: 20px;
+                height: auto;
+            }
+        }
         #collegeMajor {
             color: #00C;
             font-size: 19px;
@@ -153,6 +191,15 @@
             font-weight: bold;
             text-align: center;
             float: left;
+        }
+        @media (max-width: 767px) { 
+            #collegeMajor {
+                width: 60%;
+                height: auto;
+                font-size: 70%;
+                border-width: 30%;
+                margin-bottom: 10px;
+            }
         }
         #myHobbies {
             color: #00BFFF;
@@ -167,6 +214,16 @@
             padding: 0px;
             float: right;
         }
+        @media (max-width: 767px) { 
+            #myHobbies {
+                width: 60%;
+                height: auto;
+                font-size: 70%;
+                margin-top: 5px;
+                float: left;
+                border-width: 30%;
+            }
+        }
 
         #centerBlock {
             clear: both;
@@ -176,7 +233,12 @@
             overflow: hidden;
             margin-left:auto;
             margin-right:auto;
-            /* border: solid 5px #00BFFF; */
+        }
+        @media (max-width: 767px) { 
+            #centerBlock {
+                width: 70%;
+                height: auto;
+            }
         }
         #collegeWork {
             color: #00C;
@@ -191,6 +253,14 @@
             padding: 10px 5px;
             box-sizing: border-box;
         }
+        @media (max-width: 767px) { 
+            #collegeWork {
+                width: 80%;
+                height: auto;
+                font-size: 60%;
+                border-width: 30%;
+            }
+        }
 
         #backBlock {
             clear: both;
@@ -200,7 +270,12 @@
             margin-left:auto;
             margin-right:auto;
             overflow: hidden;
-            /* border: solid 5px #00BFFF; */
+        }
+        @media (max-width: 767px) { 
+            #backBlock {
+                width: 80%;
+                height: auto;
+            }
         }
         #birthplace {
             color: #00BFFF;
@@ -212,10 +287,25 @@
             border-radius: 10px;
             font-weight: bold;
         }
+        @media (max-width: 767px) { 
+            #birthplace {
+                width: 80%;
+                height: auto;
+                font-size: 40%;
+                border-width: 30%;
+                margin-bottom: 20px;
+            }
+        }
         .birthplaceJpeg {
             width: 200px;
             height: 240px;
             float: left;
+        }
+        @media (max-width: 767px) { 
+            .birthplaceJpeg  {
+                width: 28%;
+                height: auto;
+            }
         }
         #favoriteTeam {
             color: #00BFFF;
@@ -230,6 +320,14 @@
             padding: 0px;
             float: right;
         }
+        @media (max-width: 767px) { 
+            #favoriteTeam {
+                width: 70%;
+                font-size: 50%;
+                float: left;
+                border-width: 30%;
+            }
+        }
         a {
             color: #ffe;
         }
@@ -238,7 +336,11 @@
         font-size: 15px;
         margin-bottom: 0.5px;
     }
-    
+    @media (max-width: 767px) { 
+            .title {
+                font-size: 70%;
+            }
+        }
     </style>    
 </head>
 <body>
@@ -265,12 +367,14 @@
                 <img src="./img/IMG_1579.JPG" alt="自分の写真"
                     class="imageJPG" />
             </div>
-            <div class="motto">
-                <p class="title">座右の銘</p>
-                <p>備えあれば患いなし</p>
-            </div>
-            <div class="introName">   
-                <h1><ruby><rb>中島　千夏<rt>NAKASHIMA CHINATSU</rt></rb></ruby></h1>
+            <div class="introCentence">
+                <div class="motto">
+                    <p class="title">座右の銘</p>
+                    <p>備えあれば患いなし</p>
+                </div>
+                <div class="introName">   
+                    <h1><ruby><rb>中島　千夏<rt>NAKASHIMA CHINATSU</rt></rb></ruby></h1>
+                </div>
             </div>
         </div>
         
